@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -17,11 +15,87 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color:gainsboro;
+  background-color: rgb(42, 38, 38);
+}
+
+.main {
+  text-align: center;
+  margin-top: 50px;
+}
+
+input {
+  margin-right: 10px;
+}
+
+input[type="checkbox"]{
+  visibility: hidden;
+}
+
+label{
+  height: 50px;
+}
+
+.tarea {
+  align-items: center;
+  margin: 10px;
+  background: linear-gradient(to right top, rgb(61, 14, 155), transparent);
+  background-color: rgb(64, 92, 219);
+  border-radius:  10px;
+}
+
+.nombre-tarea{
+  font-weight: bold;
+  font-size:larger;
+}
+
+.texto{
+  width: 450px;
+  height: 50px;
+  margin: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid white;
+  border-radius:  10px;
+  color: white;
+  background: none;
+  font-size: 18px;
+  font-family: '__Inter_e66fe9', '__Inter_Fallback_e66fe9';
+  font-style: normal;
+}
+
+.boton-agregar{
+  width: auto;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  font-family: '__Inter_e66fe9', '__Inter_Fallback_e66fe9';
+  font-weight: bolder;
+  background: linear-gradient(to left bottom, rgb(54, 111, 216), transparent);
+  background-color: rgb(6, 255, 72);
+  color: white;
+}
+
+.boton-agregar:hover{
+  opacity: 0.9;
+}
+
+.boton-eliminar{
+  width: auto;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  font-family: '__Inter_e66fe9', '__Inter_Fallback_e66fe9';
+  font-weight: bolder;
+  background: linear-gradient(to left bottom, rgb(216, 170, 54), transparent);
+  background-color: rgb(255, 5, 5);
+  color: white;
+}
+
+.boton-eliminar:hover{
+  opacity: 0.9;
 }
